@@ -2,29 +2,21 @@
 <html>
 <head>
   <title> Amy Tang </title>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
   <h1> Interests </h1>
 
-  <div class="navbar">
-    <a href="index.html">home</a>
-    <a href="projects.html">projects</a>
-    <!-- <a href="publications.html">publications</a> -->
-    <a href="research.html">research experience</a>
-    <!-- <a href="resume.html">resume</a> -->
-    <div>
-      <button class="dropbtn">interests
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="interest-content">
-        <a href="UWH.html">underwater hockey</a>
-        <a href="art.html">art & photography</a>
-        <a href="chinese.html">chinese blog</a>
-      </div>
-    </div>
-    <a href="contact-me.html">contact me</a>+
-  </div>
+  <!-- Navigation bar code starts-->
+    <div id="nav-bar-placeholder"> </div>
+
+    <script type="text/javascript">
+    $(function(){
+      $("#nav-bar-placeholder").load("nav-bar.html");
+    });
+    </script>
+  <!-- Navaigation bar code ends -->
 
   <a href="UWH.html">underwater hockey</a>
   <a href="art.html">art & photography</a>
@@ -38,5 +30,16 @@
   also still have a love for watching and drawing cartoons like Avatar the Last Airbender or
   the animated Japanese show, Tokyo Ghoul, because I'm a still kid at heart.</p>
 
+  <!-- Footer code starts -->
+  <div id="footer-placeholder"> </div>
+
+  <script type="text/javascript">
+  $(function(){
+    $("#footer-placeholder").load("footer.html");
+  });
+  </script>
+  }
+  <!-- Footer code ends -->
+  
 </body>
 </html>

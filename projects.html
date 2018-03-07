@@ -2,29 +2,21 @@
 <html>
 <head>
   <title> ATang Projects </title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
   <h1> Projects </h1>
 
-  <!-- figure out how to update all of this by linking 1 single navbar so it is not copy and pasted -->
-      <div class="navbar">
-        <a href="index.html">home</a>
-        <a href="projects.html">projects</a>
-        <!-- <a href="publications.html">publications</a> -->
-        <a href="research.html">research experience</a>
-        <div>
-          <button class="dropbtn">interests
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="interest-content">
-            <a href="UWH.html">underwater hockey</a>
-            <a href="art.html">art & photography</a>
-            <a href="chinese.html">chinese blog</a>
-          </div>
-        </div>
-        <a href="contact-me.html">contact me</a>+
-      </div>
+  <!-- Navigation bar code starts-->
+    <div id="nav-bar-placeholder"> </div>
+
+    <script type="text/javascript">
+    $(function(){
+      $("#nav-bar-placeholder").load("nav-bar.html");
+    });
+    </script>
+  <!-- Navaigation bar code ends -->
 
       <h2> Personal Website (HTML and CSS) </h2>
       <p> This website was started to learn some new skills (very basic web development with HTML and CSS) as well as
@@ -43,6 +35,17 @@
           from an open-source code released by <a href="https://github.com/liuyigh/PyHRM">Liu Yi on Github</a>.
         </p>
         <a href='#'>View source code on Github.</a>
+
+        <!-- Footer code starts -->
+        <div id="footer-placeholder"> </div>
+
+        <script type="text/javascript">
+        $(function(){
+          $("#footer-placeholder").load("footer.html");
+        });
+        </script>
+        }
+        <!-- Footer code ends -->
 
 </body>
 

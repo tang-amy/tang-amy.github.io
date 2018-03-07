@@ -1,68 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title> Amy Tang </title>
+  <title> Amy Tang - Homepage</title>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
+  <div class="container">
   <h1> Amy Tang </h1>
+  <!-- Navigation bar code starts-->
+  <div id="nav-bar-placeholder"> </div>
 
-  <div class="navbar">
-    <a href="index.html">home</a>
-    <a href="projects.html">projects</a>
-    <a href="publications.html">publications</a>
-    <a href="research.html">research experience</a>
-    <a href="resume.html">resume</a>
-    <div>
-      <button class="dropbtn">interests
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="interest-content">
-        <a href="UWH.html">underwater hockey</a>
-        <a href="art.html">art & photography</a>
-        <a href="chinese.html">chinese blog</a>
+  <script type="text/javascript">
+    $(function(){
+      $("#nav-bar-placeholder").load("nav-bar.html");
+    });
+    </script>
+  <!-- Navaigation bar code ends -->
+
+  <div class="intro">
+    <div class="intro-header"> <h2> About Me </h2> </div>
+    <div class="intro-text">
+      <p> I am 19 year-old inspiring reseacher interested in both biology and software
+        analysis of data generated from experiments, especially cell imaging. I have
+         basic Java and Python experience, and I am currently learning R and Linux.</p>
+      </br>
+      <p> Right now, I am a first-year studying Computer Science and Biology as a
+        Combined B.S. major at Northeastern University in Boston, MA.</p>
+      </br>
+      <p> In my free time, I work on side projects to learn and practice coding with
+        different languages as well as read research papers in fields I'm interested
+         in. I also play underwater hockey (<a href="UWH.html">check it out here!</a>),
+         am working on improving my photography skills, and learning Mandarin.</p>
       </div>
-    </div>
-    <a href="contact-me.html">contact me</a>+
-  </div>
+   </div>
 
-  <br>
+  <!-- Footer code starts -->
+  <div id="footer-placeholder"> </div>
 
-  <h2> About Me </h2>
-  <p> I am 19 year-old inspiring reseacher interested in both biology and software analysis of data generated from experiments, especially cell imaging. I have basic Java and Python experience, and I currently am learning R and Linux.</p>
-  <p> Right now, I am currently a first-year studying Computer Science and Biology as a Combined B.S. major at Northeastern University in Boston, MA.</p>
-  <p> In my free time, I work on side projects to learn and practice coding with different languages as well as read research papers in fields I'm interested in. I also play underwater hockey (<a href="UWH.html">check it out here!</a>), am working on improving my photography skills, and learning Mandarin.</p>
-
-  <br>
-
-<!-- stick all of this into some footer of some kind -->
-  <h3> Stay Connected </h3>
-  <a href="https://www.linkedin.com/in/amy-tang">
-    <img src="images/logos/linkedin-logo.png" alt="">
-    Connect with me on LinkedIn</a>
-  <a href="http://www.github.com/tang-amy">
-    <img src="images/logos/github-logo.png" alt = "">
-    Check out my GitHub</a>
-  <a href="mailto:tang.amy@husky.neu.edu">
-    <img src="images/logos/email.jpeg" alt="">
-    Email me</a>
-
-  <h3> Resume PDF </h3>
-  <a href="resume.pdf">
-    <img src="images/logos/pdf-logo.png">
-    View/Download PDF version of resume </a>
-
-  <h3> Site Map </h3>
-  <a href="index.html">home</a>
-  <a href="projects.html">projects</a>
-  <!-- <a href="publications.html">publications</a> -->
-  <a href="research.html">research experience</a>
-  <a href="resume.html">resume</a>
-  <a href="interests.html">interests</a>
-  <a href="contact-me.html">contact</a>
-
-  <p> Copyright 2018 by Amy Tang... so on so on ... </p>
-
+  <script type="text/javascript">
+  $(function(){
+    $("#footer-placeholder").load("footer.html");
+  });
+  </script>
+  <!-- Footer code ends -->
+</div>
 </body>
 
 </html>

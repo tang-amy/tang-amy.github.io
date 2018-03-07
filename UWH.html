@@ -2,29 +2,21 @@
 <html>
 <head>
   <title> ATang UWH </title>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
   <h1> All About Underwater Hockey </h1>
 
-<!-- figure out how to update all of this by linking 1 single navbar so it is not copy and pasted -->
-    <div class="navbar">
-      <a href="index.html">home</a>
-      <a href="projects.html">projects</a>
-      <!-- <a href="publications.html">publications</a> -->
-      <a href="research.html">research experience</a>
-      <div>
-        <button class="dropbtn">interests
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="interest-content">
-          <a href="UWH.html">underwater hockey</a>
-          <a href="art.html">art & photography</a>
-          <a href="chinese.html">chinese blog</a>
-        </div>
-      </div>
-      <a href="contact-me.html">contact me</a>+
-    </div>
+  <!-- Navigation bar code starts-->
+    <div id="nav-bar-placeholder"> </div>
+
+    <script type="text/javascript">
+    $(function(){
+      $("#nav-bar-placeholder").load("nav-bar.html");
+    });
+    </script>
+  <!-- Navaigation bar code ends -->
 
     <h2> What Even Is Underwater Hockey? </h2>
     <p> Underwater hockey (UWH) is a no-contact team sport generally consisting of 6 players facing off against 6 players.
@@ -44,6 +36,14 @@
       should be and when, and how to navigate among incoming players was all a new, but welcomed, experience. </p>
     <p> I was and still am very lucky to be learning to play (the learning never ends!) and playing with some
       of the most elite players in the U.S. </p>
+
+    <h2> Why I Play </h2>
+    <p> Hockey is a great full-body workout, and it has inspired me to push myself to become the best player I can be by training
+      hard. Furthermore, it was one of those sports that was almost a perfect intersection between my competitive nature and a sport
+      I already had experience with, swimming. (And the fact that I was never one of great foot-eye, hand-eye coordination.) </p>
+    <p> However, the reason I really fell in love with the sport is the great community of people involved. All of the players from when
+      I started playing were welcoming and supportive, and as I got to know them better, I felt like I had made friends with a group of amazing
+      people I would not have met otherwise. </p>
 
     <h2> Photographs </h2>
     <!-- figure out how to add on of those cool slideshow thingys -->
@@ -73,10 +73,21 @@
         Watch a short video and read some interviews.</a> </li>
     </ul>
 
-    <h2> Interested In Joining </h2>
+    <h2> Interested In Joining? </h2>
     <p> If any of this sounds intriguing, I highly reccomend trying out the sport at least once. It is definitely a
       unique experience, a full body workout, and has led me to meet some of the most interesting, friendly people I know. Click
       <a href="https://usauwh.org/play/quick-start/where-play">here</a> to find a club near you.
+
+      <!-- Footer code starts -->
+      <div id="footer-placeholder"> </div>
+
+      <script type="text/javascript">
+      $(function(){
+        $("#footer-placeholder").load("footer.html");
+      });
+      </script>
+      }
+      <!-- Footer code ends -->
 
 </body>
 </html>

@@ -2,29 +2,21 @@
 <html>
 <head>
   <title> ATang Contact Info </title>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
   <h1> Contact Me </h1>
 
-<!-- figure out how to update all of this by linking 1 single navbar so it is not copy and pasted -->
-    <div class="navbar">
-      <a href="index.html">home</a>
-      <a href="projects.html">projects</a>
-      <!-- <a href="publications.html">publications</a> -->
-      <a href="research.html">research experience</a>
-      <div>
-        <button class="dropbtn">interests
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="interest-content">
-          <a href="UWH.html">underwater hockey</a>
-          <a href="art.html">art & photography</a>
-          <a href="chinese.html">chinese blog</a>
-        </div>
-      </div>
-      <a href="contact-me.html">contact me</a>+
-    </div>
+  <!-- Navigation bar code starts-->
+    <div id="nav-bar-placeholder"> </div>
+
+    <script type="text/javascript">
+    $(function(){
+      $("#nav-bar-placeholder").load("nav-bar.html");
+    });
+    </script>
+  <!-- Navaigation bar code ends -->
 
   <a href="https://www.linkedin.com/in/amy-tang">
     <img src="images/logos/linkedin-logo2.png" alt="">
@@ -39,33 +31,16 @@
   <h2> Good Ol' Fashion Meet Up </h2>
   <p> If you're in the Boston area and want to meet up in person, email me and we can schedule a time to meet up at Northeastern or the Northeastern-downtown Boston area.</p>
 
-  <!-- stick all of this into some footer of some kind -->
-    <h3> Stay Connected </h3>
-    <a href="https://www.linkedin.com/in/amy-tang">
-      <img src="images/logos/linkedin-logo.png" alt="">
-      Connect with me on LinkedIn</a>
-    <a href="http://www.github.com/tang-amy">
-      <img src="images/logos/github-logo.png" alt = "">
-      Check out my GitHub</a>
-    <a href="mailto:tang.amy@husky.neu.edu">
-      <img src="images/logos/email.jpeg" alt="">
-      Email me</a>
+  <!-- Footer code starts -->
+  <div id="footer-placeholder"> </div>
 
-    <h3> Resume PDF </h3>
-    <a href="resume.pdf">
-      <img src="images/logos/pdf-logo.png">
-      View/Download PDF version of resume </a>
-
-    <h3> Site Map </h3>
-    <a href="index.html">home</a>
-    <a href="projects.html">projects</a>
-    <!-- <a href="publications.html">publications</a> -->
-    <a href="research.html">research experience</a>
-    <a href="resume.html">resume</a>
-    <a href="interests.html">interests</a>
-    <a href="contact-me.html">contact</a>
-
-    <p> Copyright 2018 by Amy Tang... so on so on ... </p>
+  <script type="text/javascript">
+  $(function(){
+    $("#footer-placeholder").load("footer.html");
+  });
+  </script>
+  }
+  <!-- Footer code ends -->
 
 </body>
 

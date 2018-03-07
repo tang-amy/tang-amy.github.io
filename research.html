@@ -2,37 +2,32 @@
 <html>
 <head>
   <title> ATang Research Home</title>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
   <h1> Research Experience, Learnings, and Interests</h1>
 
-  <!-- figure out how to update all of this by linking 1 single navbar so it is not copy and pasted -->
-      <div class="navbar">
-        <a href="index.html">home</a>
-        <a href="projects.html">projects</a>
-        <!-- <a href="publications.html">publications</a> -->
-        <a href="research.html">research experience</a>
-        <div>
-          <button class="dropbtn">interests
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="interest-content">
-            <a href="UWH.html">underwater hockey</a>
-            <a href="art.html">art & photography</a>
-            <a href="chinese.html">chinese blog</a>
-          </div>
-        </div>
-        <a href="contact-me.html">contact me</a>+
-      </div>
+  <!-- Navigation bar code starts-->
+    <div id="nav-bar-placeholder"> </div>
 
-      <!-- keep this on the side of the screen near the top -->
-      <div class="research-navbar">
-        <!-- eventually add a scroll up button -->
-        <a href="research.html">research home</a>
-        <a href="r-learnings.html">learnings</a>
-        <a href="r-interests.html">interests</a>
-      </div>
+    <script type="text/javascript">
+    $(function(){
+      $("#nav-bar-placeholder").load("nav-bar.html");
+    });
+    </script>
+  <!-- Navaigation bar code ends -->
+
+  <!-- Research navigation bar code starts-->
+    <div id="research-nav-bar-placeholder"> </div>
+
+    <script type="text/javascript">
+    $(function(){
+      $("#research-nav-bar-placeholder").load("research-nav-bar.html");
+    });
+    </script>
+  <!-- Research navaigation bar code ends -->
+
 
       <h2> Experiences </h2>
       <p> blah blah blah write experiences down here </p>
@@ -46,6 +41,17 @@
       <h2> Interests </h2>
       <!-- figure out how to frame the newest "post" -->
       <a href="r-interests.html">Read more.</a>
+
+      <!-- Footer code starts -->
+      <div id="footer-placeholder"> </div>
+
+      <script type="text/javascript">
+      $(function(){
+        $("#footer-placeholder").load("footer.html");
+      });
+      </script>
+      }
+      <!-- Footer code ends -->
 
 </body>
 </html>

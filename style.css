@@ -1,0 +1,201 @@
+*{
+  font-family: "Bookman Old Style", serif;
+  margin: 0;
+  padding: 0;
+  background-color: #D3CAAB;
+}
+/*#280000 #570000 #ADA68C colors */
+
+/*NAVIGATION BAR STYLLE ------------------------------------------------------*/
+/*settting font size, list style, padding, etc. */
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+  font-size: 20px;
+  float: right;
+}
+/*placing the links for the navbar */
+.option, .dropdown {float: left;}
+/*setting colors, padding, etc. for naviagation bar text */
+.option a, .dropdown a{
+  display: inline-block;
+  color: #280000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/*setting up how the dropdown menu's contents will show */
+.dropdown {display: inline-block;}
+/* creates underline when hovered over */
+.option a:hover, .dropdown:hover .dropdn-btn {
+  border-bottom: 5px #570000 solid;
+}
+/*hiding dropdown menu's content, also ensures that it will not be pushed by
+other content */
+.dropdn-content {
+  display: none;
+  position: absolute;
+}
+/*shows dropdown menu's conent when hovered over*/
+.dropdown:hover .dropdn-content{
+  display: block;
+}
+/*creating look of dropdown menu's content*/
+.dropdn-content a {
+  display: block;
+  color: #280000;
+  text-decoration: none;
+  text-align: left;
+  padding: 12px 14px 12px 3px;
+  background: #ADA68C
+}
+/*changing color of text when hovered over */
+.dropdown-content a:hover {color: #570000;}
+/*NAVIGATION BAR STYLE -------------------------------------------------------*/
+
+/*FOOTER STYLE ---------------------------------------------------------------*/
+/*alignment of the 3 main divs on top of the other two */
+/*don't ever change this or we will never get it back */
+/* BLACK MAGIC BEGINS -----------------------------------------*/
+.sitemap, .connections, .resume {
+  display: inline-flex;
+  float: left;
+  position: relative;
+  text-align: center;
+  width: 33%;
+}
+.sitemap .contents, .connections .contents {
+  list-style-type: none;
+  margin: 0;
+  padding-top: 4px;
+  text-align: left;
+}
+.sitemap .contents {
+  padding-left: 40%;
+  padding-bottom: 8px;
+}
+.sitemap .contents, .connections .contents, .resume .contents {
+  padding-top: 8px;
+}
+.sitemap, .connections, .resume {
+  display: flex;
+  flex-direction: column;
+}
+.row, .to-top, .copyright {
+  display: flex;
+  flex-direction: row;
+}
+.connections .contents {
+  align-content: flex-start;
+}
+.to-top a {
+  margin-top: 12px;
+  margin-left: 45%;
+}
+.copyright p {
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: 16px;
+}
+/* BLACK MAGIC ENDS ------------------------------------------*/
+
+/*setting font-size for footer text */
+.sitemap, .connections, .resume, .to-top, .copyright {font-size: 12px;}
+
+/*setting up lines between each of the footer divs*/
+.connections, .resume {
+  border-left: 2px #280000 solid;
+  margin-left: 2px;
+}
+
+/*setting font styling, color, basic alignment */
+.sitemap .contents a {
+  color: #000000;
+  text-decoration: none;
+}
+.to-top a {color: #2B302F;}
+.copyright {color: #000000;}
+.connections .contents span, .resume .contents span {
+  color: #000000;
+  text-decoration: none;
+  display: inline-block;
+}
+.connections .contents a, .resume .contents a{text-decoration: none;}
+.resume .contents span {vertical-align: middle;}
+/* sizing and padding to images*/
+.connections img {
+  display: inline-block;
+  max-width: 30px;
+  max-height:30px;
+  width = auto;
+  height = auto;
+  padding-bottom: 8px;
+  padding-right: 6px;
+  padding-left: 8px;
+  margin-left: 23%;
+  vertical-align: middle;
+}
+.resume img {
+  display: inline-block;
+  max-width: 72px;
+  max-height: 72px;
+  width = auto;
+  height = auto;
+  vertical-align: middle;
+  padding-top: 5%;
+}
+
+/*setting font styling and color for sitemap links when hovered*/
+.sitemap .contents a:hover, .connections .contents span:hover,
+.resume .contents span:hover, .to-top a:hover {
+  color: #570000;
+  text-decoration: underline;
+}
+
+/*setting footer to always be at the bottom bottom of the page */
+/* has a # because it is an id */
+.container #footer-placeholder {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: .5rem;
+}
+/*FOOTER STYLE ---------------------------------------------------------------*/
+
+
+h1 {
+  font-size: 72px;
+  margin-top: 60px;
+  padding-left: 5%;
+  padding-bottom: 5px;
+  border-bottom: 10px #570000 dotted;
+  text-transform: uppercase;
+}
+
+.container .intro {
+  font-size: 16px;
+  color: #000000;
+  /*figure out how to align this properly*/
+}
+
+.container .intro-header {
+  font-size:40px;
+  border-right: 5px #570000 solid;
+  margin-left: 5%;
+  margin-right: 10%;
+}
+
+.container .intro-text {
+  border-left: 5px #570000 solid;
+  border-right: 5px #570000 solid;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 20px 10px 24px 10px;
+}
+/*setting color of links if there are any before visitation */
+.intro-text a {color: #2B302F;}
+/*setting colour of links if there are any after visitation */
+.intro-text a:visited {color: #1D201F}

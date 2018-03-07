@@ -2,28 +2,35 @@
 <html>
 <head>
   <title> ATang Publications </title>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
   <h1> Publications </h1>
 
-  <!-- figure out how to update all of this by linking 1 single navbar so it is not copy and pasted -->
-      <div class="navbar">
-        <a href="index.html">home</a>
-        <a href="projects.html">projects</a>
-        <!-- <a href="publications.html">publications</a> -->
-        <a href="research.html">research experience</a>
-        <div>
-          <button class="dropbtn">interests
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="interest-content">
-            <a href="UWH.html">underwater hockey</a>
-            <a href="art.html">art & photography</a>
-            <a href="chinese.html">chinese blog</a>
-          </div>
-        </div>
-        <a href="contact-me.html">contact me</a>+
-      </div>
+  <!-- Navigation bar code starts-->
+    <div id="nav-bar-placeholder"> </div>
+
+    <script type="text/javascript">
+    $(function(){
+      $("#nav-bar-placeholder").load("nav-bar.html");
+    });
+    </script>
+  <!-- Navaigation bar code ends -->
 
       <p> Online version of resume (allows for more details/styling than a single page PDF). Still under construction.</p>
+
+      <!-- Footer code starts -->
+      <div id="footer-placeholder"> </div>
+
+      <script type="text/javascript">
+      $(function(){
+        $("#footer-placeholder").load("footer.html");
+      });
+      </script>
+      }
+      <!-- Footer code ends -->
+
+    </body>
+
+    </html>
