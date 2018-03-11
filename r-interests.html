@@ -3,10 +3,13 @@
 <head>
   <title> ATang Interests</title>
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-  <h1>Research Interests and Interesting Papers</h1>
+  <div class="container">
+    <div class="header">
+  <h1>Research Interests</h1>
 
   <!-- Navigation bar code starts-->
     <div id="nav-bar-placeholder"> </div>
@@ -17,24 +20,18 @@
     });
     </script>
   <!-- Navaigation bar code ends -->
-
-  <!-- Rsearch navigation bar code starts-->
-    <div id="research-nav-bar-placeholder"> </div>
-
-    <script type="text/javascript">
-    $(function(){
-      $("#research-nav-bar-placeholder").load("research-nav-bar.html");
-    });
-    </script>
-  <!-- Research navaigation bar code ends -->
-
+</div>
+<div class="main">
+  <div class="paragraph">
       <h2> put paper title/subject here </h2>
       <p> blah blah blah blah blah </p>
       <p> as this gets longer/more filled, most likely will be beneficial to have some sort of sorting system on this page
         instead and then have these posts on their own html page </p>
       <p> summary of paper </p>
       <p> cited source properly and <a href="#">link to the paper<a> </p>
-
+</div>
+</div>
+<div class="footer">
         <!-- Footer code starts -->
         <div id="footer-placeholder"> </div>
 
@@ -43,9 +40,9 @@
           $("#footer-placeholder").load("footer.html");
         });
         </script>
-        }
         <!-- Footer code ends -->
-
+</div>
+</div>
       </body>
 
       </html>

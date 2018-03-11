@@ -37,9 +37,10 @@ other content */
 .dropdn-content {
   display: none;
   position: absolute;
+  z-index: 10;
 }
 /*shows dropdown menu's conent when hovered over*/
-.dropdown:hover .dropdn-content{
+.dropdown:hover .dropdn-content {
   display: block;
 }
 /*creating look of dropdown menu's content*/
@@ -52,7 +53,7 @@ other content */
   background: #ADA68C
 }
 /*changing color of text when hovered over */
-.dropdown-content a:hover {color: #570000;}
+.dropdn-content a:hover{text-decoration: underline;}
 /*NAVIGATION BAR STYLE -------------------------------------------------------*/
 
 /*FOOTER STYLE ---------------------------------------------------------------*/
@@ -92,11 +93,13 @@ other content */
 }
 .to-top a {
   margin-top: 12px;
-  margin-left: 45%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .copyright p {
-  margin-left: 30%;
-  margin-right: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
   margin-bottom: 16px;
 }
 /* BLACK MAGIC ENDS ------------------------------------------*/
@@ -154,19 +157,10 @@ other content */
   text-decoration: underline;
 }
 
-/*setting footer to always be at the bottom bottom of the page */
-/* has a # because it is an id */
-.container #footer-placeholder {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: .5rem;
-}
 /*FOOTER STYLE ---------------------------------------------------------------*/
 
-
-h1 {
+/*MAIN STYLING FOR MOST PAGES ------------------------------------------------*/
+.container h1 {
   font-size: 72px;
   margin-top: 60px;
   padding-left: 5%;
@@ -174,28 +168,355 @@ h1 {
   border-bottom: 10px #570000 dotted;
   text-transform: uppercase;
 }
-
-.container .intro {
-  font-size: 16px;
-  color: #000000;
-  /*figure out how to align this properly*/
+.container .main {
+  margin: 72px 10px;
+  margin-top: 100px;
 }
 
-.container .intro-header {
+/* for headers and links of all content */
+.container .main .paragraph h2, .container .main .list h2, .container .main .photoshow h2 {
   font-size:40px;
-  border-right: 5px #570000 solid;
   margin-left: 5%;
   margin-right: 10%;
-}
+  margin-top: 72px;
+  border-right: 5px #570000 solid;
 
-.container .intro-text {
+}
+.container .main .paragraph a, .container .main .list a,
+.container .main .special-paragraph a {color: #2B302F;}
+.container .main .paragraph a:visited, .container .main .list a:visited,
+.container .main .special-paragraph a{color: #1D201F}
+
+/* getting rid of borders on headers for lists and photoshows */
+.container .main .list h2, .container .main .photoshow h2 {border: none;}
+
+/* for text that is written in the style of a paragraph */
+.container .main .paragraph p {
   border-left: 5px #570000 solid;
   border-right: 5px #570000 solid;
   margin-left: 10%;
   margin-right: 10%;
-  padding: 20px 10px 24px 10px;
+  padding: 20px 10px 0px 10px;
 }
-/*setting color of links if there are any before visitation */
-.intro-text a {color: #2B302F;}
-/*setting colour of links if there are any after visitation */
-.intro-text a:visited {color: #1D201F}
+.container .main .paragraph .special-link a{color: #570000;}
+.container .main .paragraph .special-link a:visted{color:#1D201F}
+.container .main .paragraph .special-link {
+  border-left: 5px #570000 solid;
+  border-right: 5px #570000 solid;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 10px 24px;
+  padding-left: 26%;
+}
+
+/* for text that is in list format */
+.container .main .list ul {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.container .main .list p {
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 20px;
+}
+
+.container .main .special-paragraph h2 {
+  font-size:40px;
+  margin-left: 5%;
+  margin-right: 10%;
+  margin-top: 20px;
+}
+.container .main .special-paragraph p {
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 20px 10px 20px 10px;
+}
+.container .main .special-paragraph {
+  margin-top: 72px;
+  border: 5px #738293 solid;
+}
+
+.container .main .photoshow h2 {
+  font-size:40px;
+  padding-bottom: 10px;
+}
+
+.container .main .photoshow .slideshow-container {
+  max-width: 1000px;
+  max-height: 700px;
+  width: auto;
+  height: auto;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Hide the images by default */
+.container .main .photoshow .slideshow-container .slideshow-img {
+    display: none;
+    text-align: center;
+}
+
+/* Next & previous buttons */
+.container .main .photoshow .slideshow-container .prev,
+.container .main .photoshow .slideshow-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #000000;
+  font-weight: bold;
+  font-size: 40px;
+  transition: 0.4s ease;
+  border-radius: 0 3px 3px 0;
+}
+/* Position the "next button" to the right */
+.container .main .photoshow .slideshow-container .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.container .main .photoshow .slideshow-container .prev:hover,
+.container .main .photoshow .slideshow-container .next:hover {
+  background-color: rgba(255,255,255,0.8);
+}
+/* Caption text */
+.container .main .photoshow .slideshow-container .slideshow-img .text {
+  color: #f2f2f2;
+  background: rgba(0,0,0,0.8);
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+/* The dots/bullets/indicators */
+.container .main .photoshow .dots .dot {
+  cursor:pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background: #000000;
+  border-radius: 50%;
+  display: inline-block;
+  transition: 0.6s ease;
+  position: relative;
+}
+
+.container .main .photoshow .dots {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container .main .photoshow .slideshow-container .dots .dot:hover,
+.container .main .photoshow .slideshow-container .dots .active {
+  color: #570000;
+}
+
+/* Fading animation */
+.container .main .photoshow .slideshow-container .fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*MAIN STYLING FOR MOST PAGES ------------------------------------------------*/
+
+/* IMAGES AS A BACKGROUND FOR MAIN -------------------------------------------*/
+.img-bg-page {
+  width: 100%;
+  overflow: hidden; /*so image is auto croppped if window is not big enough*/
+  color: #280000;
+  font-size: 36px;
+  position: relative;
+}
+/* placing and sizing bg img */
+.container .main .img-bg-page .bg-img img {
+  max-height: 1080px;
+  width: auto;
+  margin-left: 4px;
+  margin-right: 4px;
+  object-fit: contain;
+  position: relative;
+}
+/* placing and sizing bg img */
+.container .main .img-bg-page .bg-img2 img {
+  max-height: 1556px;
+  width: auto;
+  margin-left: 4px;
+  margin-right: 4px;
+  object-fit: contain;
+  position: relative;
+}
+/* IMAGES AS A BACKGROUND FOR MAIN -------------------------------------------*/
+
+/* INDEX.HTML SPECIFIC CODE --------------------------------------------------*/
+.container .main .img-bg-page .introduction {
+  float: left;
+  position: absolute;
+  top: 20%;
+  margin-left: 15%;
+  margin-right: 55%;
+  border: 4px rgba(0,0,0,0.5);
+  font-size: 16px;
+  border-bottom: 8px rgba(0,0,0,0.6) outset;
+  border-right: 8px rgba(0,0,0,0.6) outset;
+  background: transparent;
+}
+.container .main .img-bg-page .introduction h2 {
+  font-size: 48px;
+  padding: 10px;
+  padding-bottom: 20px;
+}
+
+.container .main .img-bg-page  .introduction p {padding: 0px 10px 20px 10px;}
+.container .main .img-bg-page .introduction p, .container .main .img-bg-page .introduction h2 {
+  color: #FFFFFF;
+  background: rgba(87,0,0,0.75);
+}
+.container .main .img-bg-page .introduction a {
+  background: transparent;
+  color: #EBEBE0;
+}
+.container .main .img-bg-page .introduction a:visited {color: #D6D6C2;}
+/* INDEX.HTML SPECIFIC CODE --------------------------------------------------*/
+
+/* CONTACT-ME.HTML SPECIFIC CODE ---------------------------------------------*/
+/* placing links to social media, sizing, and coloring them */
+.img-bg-page .logos-placement {
+  float: left;
+  margin-left: 15%;
+  top: 8%;
+  display: in-line block;
+  position: absolute;
+  background-color: transparent;
+}
+.img-bg-page .logos-placement a {
+  text-decoration: none;
+  background-color: transparent;
+}
+.img-bg-page .logos-placement a span {
+  color: #280000;
+  display: inline-block;
+  margin-top: 60px;
+  vertical-align: top;
+  background-color: transparent;
+}
+.img-bg-page .logos-placement a img {
+  max-width: 672px;
+  max-height: 72px;
+  width: auto;
+  height: auto;
+  margin-top: 48px;
+  margin-right: 8px;
+  background: transparent;
+}
+.img-bg-page .logos-placement a span:hover,
+.img-bg-page .logos-placement a:hover span{
+  text-decoration: underline;
+}
+/* placing email link + adjsting colors */
+.img-bg-page .email-link {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: left;
+  background-color: transparent;
+  position: absolute;
+  float: left;
+  margin-left: 42%;
+  top: 34%
+}
+.img-bg-page .email-link a, .img-bg-page .email-link h3 {background-color: transparent;}
+.img-bg-page .email-link a {
+  color:#570000;
+  text-decoration: none;
+}
+.img-bg-page .email-link h3 {color: #280000;}
+.img-bg-page .email-link a:hover {text-decoration: underline;}
+/*placing the paragraph about meeting in person */
+.img-bg-page .in-person-para {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: left;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 10px;
+  font-size: 24px;
+  font-style: italic;
+  position: absolute;
+  float: left;
+  padding-left: 10%;
+  top: 70%;
+  width: 50%;
+}
+.img-bg-page .in-person-para h3, .img-bg-page .in-person-para p {background-color: transparent;}
+/* CONTACT-ME.HTML SPECIFIC CODE ---------------------------------------------*/
+
+/* INTERESTS.HTML SPEIFIC CODE -----------------------------------------------*/
+.container .main .img-bg-page .interest-links {
+  float: left;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/*settig up the main links */
+.img-bg-page .interest-links ul {
+  float: left;
+  margin-left: 40%;
+  position: absolute;
+  top: 8%;
+  background: transparent;
+  list-style-type: none;
+}
+.img-bg-page .interest-links ul li {
+  margin: 36px;
+  padding: 12px;
+  border: 4px #280000 double;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.7);
+}
+.img-bg-page .interest-links ul li a {
+  display: block;
+  text-decoration: none;
+  color: #570000;
+  background: transparent;
+}
+.img-bg-page .interest-links ul li a:hover {text-decoration: underline;}
+/*setting up the little blurbs */
+.main .img-bg-page .easter-egg p, .main .img-bg-page .interests-extra p {
+  background: rgba(87,0,0, 0.7);
+  color: #ffffff;
+  padding: 12px;
+  font-size: 28px;
+}
+.main .img-bg-page .easter-egg {
+  display: block;
+  float: left;
+  position: absolute;
+  top: 42%;
+  margin-right: 20%;
+  background: transparent;
+  border: 6px rgba(0,0,0,0.5) solid;
+  border-left: 0px;
+  border-top: 0px;
+}
+.main .img-bg-page .interests-extra {
+  display: block;
+  float: right;
+  position: absolute;
+  top: 58%;
+  margin-left: 20%;
+  background: transparent;
+  border: 6px rgba(0,0,0,0.5) solid;
+  border-right: 0px;
+  border-top: 0px;
+}
+/* INTERESTS.HTML SPECIFIC CODE ----------------------------------------------*/

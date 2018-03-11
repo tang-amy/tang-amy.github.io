@@ -3,11 +3,14 @@
 <head>
   <title> ATang Chinese Blog </title>
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
+  <div class="container">
+    <div class="header">
   <!-- issue with how chinese is displayed :( -->
-  <div lang="zh-Hans"> <h1> Blog 博客 </h1> </div>
+  <h1 lang="zh-Hans"> Blog 博客 </h1> 
 
   <!-- Navigation bar code starts-->
     <div id="nav-bar-placeholder"> </div>
@@ -20,24 +23,38 @@
   <!-- Navaigation bar code ends -->
 
   <!-- chinese nav bar code starts -->
-  <div id="chinese-nav-bar-placeholder"></div>
+  <!-- <div id="chinese-nav-bar-placeholder"></div>
 
   <script type="text/javascript">
   $(function(){
     $("#chinese-nav-bar-placeholder").load("nav-bar.html");
   });
-  </sccript>
+  </script> -->
+</div>
 
-    <!-- display newest entry first -->
+    <div class="main">
+      <div class="special-paragraph" lang="en">
+        <h2> Introduction </h2>
+        <p> I decided to create a blog in Chinese where I'll be writing about my life and other
+          things that come across my interest for the purpose to practicing my literacy in the language.
+          I don't often have people to write (or type to in most cases nowadays) for practice, and so I
+          thought that this would be a cool outlet. For now, the posts will be directly on this page,
+          and I aim to post once every two weeks. </p>
+        </div>
 
-    <h2> Next date blah </h2>
-    <p> Next entry lalalalalala </p>
-    <p> lalalalalaal </p>
+      <div class="special-paragraph" lang="zh-Hans">
+        <h2> Introduction </h2>
+        <p> Write a short introduction in chinese ... </p>
+      </div>
 
-    <h2> Date blah blah blah </h2>
-    <p> Start writing lalalalalala </p>
-    <p> Aim for 2 paragraphs? </p>
+      <div class="paragraph" lang="zh-Hans">
+        <h2> First Post </h2>
+        <p> I havem't written anything yet so the first post can't really exist but this will serve as
+          a placeholder for now. </p>
+        </div>
+    </div>
 
+<div = "footer">
     <!-- Footer code starts -->
     <div id="footer-placeholder"> </div>
 
@@ -48,6 +65,7 @@
     </script>
     }
     <!-- Footer code ends -->
-
+</div>
+</div>
   </body>
 </html>

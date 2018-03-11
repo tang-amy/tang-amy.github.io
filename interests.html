@@ -3,9 +3,12 @@
 <head>
   <title> Amy Tang </title>
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
+  <div class="container">
+  <div class="header">
   <h1> Interests </h1>
 
   <!-- Navigation bar code starts-->
@@ -17,19 +20,40 @@
     });
     </script>
   <!-- Navaigation bar code ends -->
+</div>
+<div class="main">
+  <div class="img-bg-page">
 
-  <a href="UWH.html">underwater hockey</a>
-  <a href="art.html">art & photography</a>
-  <a href="chinese.html">chinese blog</a>
+    <div class="bg-img2">
+      <img src="images/backgrounds/Sumida-tonal.jpg"
+      alt="Tonal Filtered Nighttime Picture of Sumida">
+    </div>
 
+    <div class="interest-links">
+      <ul>
+  <li> <a href="UWH.html">underwater hockey</a> </li>
+<li>  <a href="art.html">art & photography</a> </li>
+  <li> <a href="chinese.html">chinese blog</a> </li>
+</ul></div>
+
+<div class="easter-egg">
   <p> If you made it here, you've discovered a little easter egg! </p>
+</div>
 
-  <p> Some of my less productive pasttimes include watching TV (my current favourite
-    shows are Westworld and Man In The High Castle) and listening to music (I'm a big fan
-    of a lot of rock music like Rush and Pink Floyd as well the Hamilton soundtrack). I
-  also still have a love for watching and drawing cartoons like Avatar the Last Airbender or
-  the animated Japanese show, Tokyo Ghoul, because I'm a still kid at heart.</p>
+<div class="interests-extra">
+  <p> Some of my less productive pasttimes include listening to music and watching a variety of shows and movies.</p>
+ <p> I'm a big fan of rock music like Rush and Pink Floyd as well
+   the Hamilton soundtrack. I use to play violin and hope to get back into it one day.</p>
+   <p> My current favourite TV series are Westworld, Man In The High Castle, and Black Mirror. I
+   also still love for watching (and drawing cartoons!) like Avatar the Last Airbender or
+   the animated Japanese show, Tokyo Ghoul, because I'm a still kid at heart.</p>
+   <p> For movies, I'm split between psychological thrillers -- think Shutter Island and
+     Fight Club -- and the beautifully animated Studio Ghibli films. </p>
+</div>
+</div>
+</div>
 
+<div class="footer">
   <!-- Footer code starts -->
   <div id="footer-placeholder"> </div>
 
@@ -38,8 +62,8 @@
     $("#footer-placeholder").load("footer.html");
   });
   </script>
-  }
   <!-- Footer code ends -->
-  
+</div>
+</div>
 </body>
 </html>

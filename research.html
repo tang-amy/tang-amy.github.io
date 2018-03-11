@@ -3,9 +3,12 @@
 <head>
   <title> ATang Research Home</title>
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
+  <div class = "container">
+    <div class="header">
   <h1> Research Experience, Learnings, and Interests</h1>
 
   <!-- Navigation bar code starts-->
@@ -17,31 +20,29 @@
     });
     </script>
   <!-- Navaigation bar code ends -->
+</div>
 
-  <!-- Research navigation bar code starts-->
-    <div id="research-nav-bar-placeholder"> </div>
-
-    <script type="text/javascript">
-    $(function(){
-      $("#research-nav-bar-placeholder").load("research-nav-bar.html");
-    });
-    </script>
-  <!-- Research navaigation bar code ends -->
-
-
+<div class="main">
+  <div class="paragraph">
       <h2> Experiences </h2>
       <p> blah blah blah write experiences down here </p>
       <p> estimation is </p>
-      <p> 2 or 3 short paragraphs </p>
-
+      <p> Check out all of the protocols, cell pathways, and cell processes that
+       I have learned about <a href="r-learning.html">here</a>. Read about research topics I'm
+       interested in and the different articles I have been reading <a href="r-interests.html">here</a>.</p>
+</div>
+<div class="paragraph">
       <h2> Learnings </h2>
       <!-- figure out how to frame the newest "post" -->
-      <a href="r-learnings.html">Read more.</a>
 
+</div>
+<div class="paragraph">
       <h2> Interests </h2>
       <!-- figure out how to frame the newest "post" -->
-      <a href="r-interests.html">Read more.</a>
 
+</div>
+</div>
+<div class="footer">
       <!-- Footer code starts -->
       <div id="footer-placeholder"> </div>
 
@@ -50,8 +51,8 @@
         $("#footer-placeholder").load("footer.html");
       });
       </script>
-      }
       <!-- Footer code ends -->
-
+</div>
+</div>
 </body>
 </html>

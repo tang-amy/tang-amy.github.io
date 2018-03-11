@@ -3,9 +3,12 @@
 <head>
   <title> ATang Contact Info </title>
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
+  <div class="container">
+  <div class="header">
   <h1> Contact Me </h1>
 
   <!-- Navigation bar code starts-->
@@ -17,20 +20,34 @@
     });
     </script>
   <!-- Navaigation bar code ends -->
-
+</div>
+<div class="main">
+<div class="img-bg-page">
+  <div class="bg-img">
+    <img src="images/backgrounds/Jiangsu-BW.jpg" alt="B&W Photograph of Jiangsu">
+  </div>
+  <div class="logos-placement">
   <a href="https://www.linkedin.com/in/amy-tang">
     <img src="images/logos/linkedin-logo2.png" alt="">
-    LinkedIn</a>
+    <span>LinkedIn</span></a>
+  </br>
   <a href="http://www.github.com/tang-amy">
     <img src="images/logos/github-logo2.png" alt = "">
-    GitHub</a>
+    <span>GitHub</span></a>
+  </div>
 
-  <h2> Email </h2>
-  <a href="mailto:tang.amy@husky.neu.edu"> tang.amy@husky.neu.edu</a>
+<div class="email-link">
+  <h3> Email </h3>
+  <a href="mailto:tang.amy@husky.neu.edu">tang.amy@husky.neu.edu</a>
+</div>
 
-  <h2> Good Ol' Fashion Meet Up </h2>
+<div class="in-person-para">
+  <h3> Good Ol' Fashion Meet Up </h3>
   <p> If you're in the Boston area and want to meet up in person, email me and we can schedule a time to meet up at Northeastern or the Northeastern-downtown Boston area.</p>
-
+</div>
+</div>
+</div>
+<div class="footer">
   <!-- Footer code starts -->
   <div id="footer-placeholder"> </div>
 
@@ -39,9 +56,9 @@
     $("#footer-placeholder").load("footer.html");
   });
   </script>
-  }
   <!-- Footer code ends -->
-
+</div>
+</div>
 </body>
 
 </html>
